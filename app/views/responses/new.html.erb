@@ -1,0 +1,7 @@
+<%= simple_form_for :responses, url: survey_responses_path(survey_id: params[:survey_id]), method: :post do |f| %>
+  <% @questions.each do |question| %>
+    <%= f.input "#{question.id}", as: :text, label: question.body %>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>

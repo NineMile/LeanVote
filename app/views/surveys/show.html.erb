@@ -1,0 +1,6 @@
+<% @survey.questions.each do |question| %>
+  <h2><%= question.body %></h2>
+  <% question.responses.each do |response| %>
+    <p><%= response.body %></p>
+  <% end %>
+<% end %>

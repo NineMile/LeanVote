@@ -1,0 +1,10 @@
+<h1> Welcome to LeanVote </h1>
+
+<% if current_user %>
+  <%= link_to 'Sign Out', destroy_user_session_path %>
+<% else %>
+  <%= link_to 'Sign In', new_user_session_path %>
+<% end %>
+
+
+<p><%= link_to 'New Survey', new_survey_path %></p>
