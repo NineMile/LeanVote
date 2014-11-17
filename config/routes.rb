@@ -1,16 +1,12 @@
 Rails.application.routes.draw do
 
-  root to: 'welcome#index'
+  root 'welcome#index'
 
   resources :surveys do
     resources :responses
   end
 
-
-  resources :users
-
   devise_for :users
-  devise_for :surveys
 
 
 

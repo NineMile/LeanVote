@@ -7,4 +7,4 @@
 <% end %>
 
 
-<p><%= link_to 'New Survey', new_survey_path %></p>
+<p><%= link_to 'New Survey', new_survey_response_path(survey_id: Survey.first.id) %></p>
